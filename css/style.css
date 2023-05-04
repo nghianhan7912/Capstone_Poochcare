@@ -48,13 +48,13 @@
     color: #189A46;
     text-decoration: none;
 }
-.carousel-inner{
+.section1 .carousel-inner{
     height: 100vh;
 }
-.carousel-item{
+.section1 .carousel-item{
     height: 100%;
 }
-.carousel-item img{
+.section1 .carousel-item img{
     height: 100%;
     object-fit: cover;
     filter: brightness(50%);
@@ -279,4 +279,128 @@
 }
 .ourplans__bottom{
     padding-bottom: 80px;
+}
+/* VIDEO  */
+.video{
+    background-color: #151515;
+    padding: 80px 200px;
+    text-align: center;
+}
+.video__content{
+    position: relative;
+}
+.video__content img{
+    width: 100%;
+    border-radius: 10px;
+}
+.video__content .play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    color: #189A46;
+    background-color: #fff;
+    display: inline-block;
+    animation: ripple 1s linear infinite;
+}
+.video__title p{
+    margin: 30px 0;
+}
+#clip{
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+  }
+div#clip iframe{
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+/* div#clip iframe{
+    width: 100%;
+    height: 400px;
+    display: block;
+} */
+/* .video__over__lay{
+    display: none !important;
+} */
+/* #clip{
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+} */
+/* TESTIMONIALS  */
+.testimonials{
+    background-color: #222222;
+    padding: 80px 0;
+}
+.testimonials__title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* .testimonials__content{
+    display: flex;
+} */
+.testimonials__item .testimonials__icon::before{
+    content: open-quote;
+    font-size: 50px;
+    color: #189A46;
+    line-height: .8;
+    padding-top: 8px;
+    font-weight: 600;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+}
+.testimonials__item .testimonials__icon{
+    padding-left: 20px;
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #777;
+}
+.tes__img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+.testimonials__content{
+    background-color: #151515;
+    padding: 40px;
+    /* margin-right: 25px; */
+    border-radius: 15px;
+}
+.tes__bot{
+    display: flex;
+    align-items: center;
+}
+.tes__bot h3{
+    font-size: 1.25rem;
+    margin-bottom: -10px;
+}
+.testimonials__item .tes__text{
+    align-self: center;
+}
+.testimonials__item .tes__text p{
+    color: #777;
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+.testimonials .carousel-indicators{
+    bottom: -60px;
+} 
+@keyframes ripple{
+    0% {
+      box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
 }
