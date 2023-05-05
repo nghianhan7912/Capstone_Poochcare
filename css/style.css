@@ -236,17 +236,6 @@
     color: #999;
     margin-bottom: 5px;
 }
-.ourplans__item a{
-    margin-top: 30px;
-    padding: 12px 35px;
-    font-size: 1.15rem;
-    line-height: 28px;
-    font-weight: 400;
-    transition: 0.3s ease-in;
-    border-radius:10px ;
-    background-color: #189A46;
-    color: #fff;
-}
 .ourplans__item a:hover{
     background-color: #116E32;
     border-color: #116E32;
@@ -394,7 +383,46 @@ div#clip iframe{
 }
 .testimonials .carousel-indicators{
     bottom: -60px;
+}
+.updated{
+    background-color: #151515;
+    text-align: center;
+    padding: 80px 350px;
 } 
+.updated__content h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 48px;
+    color: #fff;
+}
+.updated__content p{
+    font-size: 1.2rem;
+    line-height: 28px;
+    padding: 20px 0;
+}
+.updated__content .button{
+    border: none;
+    width: 28%;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.updated__content .button:hover{
+    background-color: #116E32;
+}
+.form__control{
+    display: flex;
+}
+.email{
+    width: 70%;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: none;
+}
+.email:focus{
+    outline: none;
+    border: 1px solid #189A46;
+}
 @keyframes ripple{
     0% {
       box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
