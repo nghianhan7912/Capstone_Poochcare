@@ -1,0 +1,195 @@
+/* MOVE  */
+.move {
+    background-image: url("../img/banner4.jpg");
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    position: relative;
+}
+
+.move::before {
+    content: " ";
+    background-color: #151515;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+
+.move__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.move__title h2 {
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.move__title a {
+    color: #189A46;
+    text-decoration: none;
+}
+
+.move__title p {
+    color: #fff;
+}
+
+/* ABOUT  */
+.about {
+    background-color: #151515;
+    padding: 100px 0;
+}
+
+.about__left p {
+    font-size: 1.3rem;
+    line-height: 32px;
+    opacity: 0.9;
+    color: #AFAFAF;
+}
+
+.about__right p {
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: #afafaf;
+    font-family: 'Jost', sans-serif;
+}
+
+/* HISTORY  */
+.history {
+    background-image: url("../img/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.history::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #151515;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+
+.history__bottom {
+    margin-top: 50px;
+}
+
+.history__right {
+    padding: 130px 0;
+}
+
+.history__right h3 {
+    color: #fff;
+}
+
+.history__right h4 {
+    color: #fff;
+}
+
+/* CHOOSE  */
+.choose {
+    background-color: #151515;
+    padding: 70px 0;
+}
+
+.choose__left {
+    text-align: right;
+}
+
+.choose img {
+    width: 100%;
+}
+
+.choose__item {
+    display: flex;
+    padding: 10px 0;
+}
+
+.choose__item .choose__icon {
+    color: #189A46;
+    font-size: 2.75rem;
+    padding-inline: 10px;
+}
+
+.choose__item .choose__text {
+    margin-left: 20px;
+}
+
+.choose__item .choose__text h4 {
+    color: #fff;
+    transition: all .5s;
+}
+
+.choose__item .choose__text h4:hover {
+    color: #189A46;
+}
+
+/* TEAM  */
+.team {
+    background-color: #222222;
+    padding: 80px 0;
+}
+
+.team .team__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team .team__pad img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s linear;
+}
+.team__img {
+    overflow: hidden;
+}
+.team__pad:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s linear;
+}
+.team__pad:hover h4{
+    color: #189A46;
+}
+.team .team__pad {
+    text-align: center;
+}
+.team__pad h4 {
+    font-size: 1.3rem;
+    line-height: 26px;
+    color: #dddddd;
+    font-weight: 600;
+    padding-top: 20px;
+    transition: all .5s;
+}
+.team__icon a {
+    display: inline-block;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #222222;
+    color: #189A46;
+    transition: all 0.3s ease;
+}
+.team__icon a:hover {
+    background: #189A46;
+    color: #fff;
+    text-decoration: none;
+}
+.team__icon i {
+    font-size: 0.8rem;
+    line-height: 30px;
+    display: block;
+}
