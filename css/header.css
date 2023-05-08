@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html,body{
     /* color: #404040; */
     font-family: 'Jost', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 li{
     list-style: none;
@@ -44,6 +45,10 @@ p{
     text-transform: capitalize;
     transition: all .5s;
 }
+.readmore:hover{
+    text-decoration: none;
+    color: #189A46;
+}
 .button{
     margin-top: 30px;
     padding: 12px 35px;
@@ -57,12 +62,17 @@ p{
 }
 /* HEADER  */
 .fixed__top{
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 1030;
 }
+.navbar-nav{
+    align-items: center;
+}
+@media only screen and (max-width: 991px){
+header .fixed__top{
+    height: auto;
+}}
 .bg__header{
     background-color: black;
     padding: 0px;
@@ -126,7 +136,7 @@ a.dropdown-item:hover{
     color: #189A46;
     background-color: black;
 }
-.icon{
+.icon__search{
     background: #222222;
     font-size: 1rem;
     width: 45px;
@@ -137,6 +147,11 @@ a.dropdown-item:hover{
     color: #189A46;
     border: none;
     margin-left: 5px;
+    transition: all .5s;
+}
+.icon__search:hover{
+    color: #fff;
+    background-color: #189A46;
 }
 .nav__left i{
     font-size: 1rem;
@@ -233,4 +248,28 @@ footer a:hover{
 }
 .footer__bottom .footer__red{
     color: red;
+}
+/* BACKTOTOP  */
+.backtotop{
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    z-index: 99;
+    background: #189A46;
+    transform: translateY(10px);
+    transition:all 0.3s ease-out;
+}
+.backtotop:hover{
+    transform: translateY(0);
+    transition:all 0.3s ease-out;
+}
+.backtotop a{
+    color: #fff;
+    font-size: 0.8rem;
 }
