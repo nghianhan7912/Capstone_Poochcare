@@ -66,13 +66,16 @@ p{
     top: 0;
     z-index: 1030;
 }
+.fixed__top .navbar-toggler i{
+    color: white;
+}
+.navbar-toggler{
+    background-color: #189A46;
+}
 .navbar-nav{
     align-items: center;
 }
-@media only screen and (max-width: 991px){
-header .fixed__top{
-    height: auto;
-}}
+
 .bg__header{
     background-color: black;
     padding: 0px;
@@ -272,4 +275,9 @@ footer a:hover{
 .backtotop a{
     color: #fff;
     font-size: 0.8rem;
+}
+@media only screen and (max-width: 991px){
+    header.fixed__top{
+        height: auto;
+    }
 }
