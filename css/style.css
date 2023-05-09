@@ -414,9 +414,6 @@ div#clip iframe{
 .updated__content .button:hover{
     background-color: #116E32;
 }
-.form__control{
-    /* display: flex; */
-}
 .email{
     width: 70%;
     display: inline-block;
