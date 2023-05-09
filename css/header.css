@@ -154,7 +154,7 @@ header .navbar{
 .nav-item{
     padding: 0 5px;
 }
-.active .nav-link{
+.nav-color .nav-link{
     color: #189A46;
 }
 .nav-link:hover{

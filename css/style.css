@@ -388,7 +388,7 @@ div#clip iframe{
 .updated{
     background-color: #151515;
     text-align: center;
-    padding: 80px 350px;
+    padding: 80px 100px;
 }
 @media only screen and (max-width:991px){
     .updated{
@@ -408,19 +408,19 @@ div#clip iframe{
 }
 .updated__content .button{
     border: none;
+    display: inline-block;
     width: 28%;
-    margin-top: 0;
-    margin-left: 20px;
 }
 .updated__content .button:hover{
     background-color: #116E32;
 }
 .form__control{
-    display: flex;
+    /* display: flex; */
 }
 .email{
     width: 70%;
-    height: 60px;
+    display: inline-block;
+    height: 52px;
     border-radius: 10px;
     padding-left: 20px;
     border: none;
@@ -429,6 +429,7 @@ div#clip iframe{
     outline: none;
     border: 1px solid #189A46;
 }
+/* ANIMATE  */
 @keyframes ripple{
     0% {
       box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
@@ -438,3 +439,21 @@ div#clip iframe{
       box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
     }
 }
+/* UPDATE  */
+@media screen and (max-width:768px) {
+    .email {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .updated__content .form__control button {
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+        padding: 12px 35px;
+        transition: 0.3s ease-in;
+    }
+}
+
