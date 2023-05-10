@@ -54,7 +54,11 @@
     font-weight: 400;
     transition: all .5s;
 }
-
+@media screen and (max-width:576px) {
+    .button__a{
+        padding: 12px 20px;
+    }
+}
 .bt__a1 {
     background-color: unset;
     color: #fff;
@@ -164,7 +168,11 @@
     background-color: #000000;
     padding: 100px 0;
 }
-
+@media screen and (max-width:992px) {
+    .intro{
+        padding: 0 0;
+    }
+}
 .intro__left img {
     width: 100%;
     border-radius: 10px;
@@ -232,11 +240,14 @@
     padding: 80px 0;
     text-align: center;
 }
-
+@media screen and (max-width:992px) {
+    .ourplans{
+        padding: 50px 0;
+    }
+}
 .ourplans__title {
     margin-bottom: 50px;
 }
-
 .ourplans h5 {
     margin-bottom: 10px;
     font-size: 1.3rem;

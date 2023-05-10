@@ -54,10 +54,15 @@
 }
 @media screen and (max-width:992px) {
     .product__text {
-        padding: 60px 0 30px 15px;
+        padding: 0 0 30px 15px;
     }
 }
 .product__item{
     padding: 80px 0;
     border-bottom: 1px solid #444;
+}
+@media screen and (max-width:992px) {
+    .product .product__item{
+        padding: 20px 0 ;
+    }
 }
