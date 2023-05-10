@@ -96,7 +96,14 @@
 .history__right h4 {
     color: #fff;
 }
-
+.history p{
+    color: #c7c3c3;
+}
+@media screen and (max-width:912px) {
+    .history__right{
+        padding: 50px 0;
+    }
+}
 /* CHOOSE  */
 .choose {
     background-color: #151515;
@@ -106,7 +113,12 @@
 .choose__left {
     text-align: right;
 }
-
+@media screen and (max-width:992px) {
+    .choose__left{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+}
 .choose img {
     width: 100%;
 }
